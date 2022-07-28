@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Link Swiper's CSS -->
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <!-- Css Linking -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Kunal Khanna Josh</title>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">
+        <img src="Assets/icons/Logo.svg" alt="" />
+      </a>
+
+      <!-- navbar menus -->
+      <ul class="navbar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <!-- search and cart icons in nav -->
+      <div class="header-icons">
+        <div class="header-icons-container">
+          <a href="" id="menu-icon">menu</a>
+          <img
+            id="search-icon"
+            class="search-icon"
+            src="Assets/icons/Search.svg"
+            alt=""
+          />
+
+          <img
+            id="cart-icon"
+            class="cart-icon"
+            src="Assets/icons/Cart.svg"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <!-- search box -->
+      <div class="search-box">
+        <input type="search" name="" id="" placeholder="Search here..." />
+      </div>
+
+      <!-- Cart box modal-->
+      <div class="cart">
+        <div class="cart-child">
+          <!-- box 1 -->
+          <img src="Assets/icons/Cart.svg" class="filter-grey" alt="" />
+          <div class="text">
+            <h1>Cart is empty</h1>
+            <h3>Add items to the cart to check out</h3>
+          </div>
+          <button
+            class="btn"
+            type="button"
+            name="back-to-menu"
+            onclick="backToMenu()"
+          >
+            Back to Menu
+          </button>
+        </div>
+      </div>
+
+      <!-- Request dish box modal-->
+      <div class="dishModal">
+        <div class="dishModal-child">
+          <div class="text">
+            <h1>Request a Dish</h1>
+          </div>
+
+          
+          <form action="">
+            <input class="" type="" placeholder="Enter name of the dish" required />
+  
+            <input
+              type="email"
+              name="email"
+              id=""
+              placeholder="Paste a URL"
+              required
+            />
+          </form>
+
+          
+          <div class="submit-cancel">
+            <button
+              class="btn-cancel"
+              type="button"
+              name="back-to-menu"
+              onclick="backToMenu()"
+            >
+              Cancel
+            </button>
+            <button
+              class="btn-submit"
+              type="button"
+              name="back-to-menu"
+              onclick="backToMenu()"
+            >
+              Submit Request
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Home Page -->
+    <section class="home" id="home">
+      <div class="home-text">
+        <h1>Authentic Home food in India</h1>
+        <h3>
+          JTGeats is a courier service in which authentic home cook food is
+          delivered to a customer.
+        </h3>
+
+        <div class="search-home">
+          <input type="text" name="" id="" placeholder="Search food you love" />
+          <button type="submit" name="myButton">Search</button>
+        </div>
+      </div>
+
+      <div class="home-img">
+        <img src="Assets/icons/cooking.svg" alt="" />
+      </div>
+    </section>
+
+    <!-- product section -->
+    <section id="menu" class="product" id="product">
+      <div class="product-heading">
+        <h1>Home Kitchen</h1>
+      </div>
+
+      <div class="product-container">
+        <div class="box">
+          <img
+            class="onion"
+            src="/Assets/images/pexels-mumma-oyens-8799602 1.png"
+            alt=""
+            srcset=""
+          />
+
+          <div class="content">
+            <div class="content-1">
+              <span>Home made pizza</span>
+              <span>₹190</span>
+            </div>
+
+            <div class="rate-time">
+              <div class="star-rate">
+                <img src="Assets/icons/star.svg" alt="" />
+                <div class="rating">4.7</div>
+              </div>
+              <div class="food-time">
+                <div class="food-time-inner">
+                  <div class="food-time-number">50-79</div>
+                  <div class="food-time-unit">min</div>
+                </div>
+              </div>
+            </div>
+
+            <img
+              class="bx bx-cart-alt"
+              src="/Assets/icons/plus.svg"
+              style="max-width: 1.375rem"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="box">
+          <img
+            src="/Assets/images/pexels-omar-mahmood-106343 1.png"
+            alt=""
+            srcset=""
+          />
+
+          <div class="content">
+            <div class="content-1">
+              <span>Home made pizza</span>
+              <span>₹190</span>
+            </div>
+
+            <div class="rate-time">
+              <div class="star-rate">
+                <img src="Assets/icons/star.svg" alt="" />
+                <div class="rating">4.7</div>
+              </div>
+              <div class="food-time">
+                <div class="food-time-inner">
+                  <div class="food-time-number">50-79</div>
+                  <div class="food-time-unit">min</div>
+                </div>
+              </div>
+            </div>
+
+            <img
+              class="bx bx-cart-alt"
+              src="/Assets/icons/plus.svg"
+              style="max-width: 1.375rem"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="/Assets/images/unsplash_33GPuoFI7v8.png" alt="" srcset="" />
+
+          <div class="content">
+            <div class="content-1">
+              <span>Home made pizza</span>
+              <span>₹190</span>
+            </div>
+
+            <div class="rate-time">
+              <div class="star-rate">
+                <img src="Assets/icons/star.svg" alt="" />
+                <div class="rating">4.7</div>
+              </div>
+              <div class="food-time">
+                <div class="food-time-inner">
+                  <div class="food-time-number">50-79</div>
+                  <div class="food-time-unit">min</div>
+                </div>
+              </div>
+            </div>
+
+            <img
+              class="bx bx-cart-alt"
+              src="/Assets/icons/plus.svg"
+              style="max-width: 1.375rem"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="/Assets/images/unsplash_60nzTP7_hMQ.png" alt="" srcset="" />
+
+          <div class="content">
+            <div class="content-1">
+              <span>Home made pizza</span>
+              <span>₹190</span>
+            </div>
+
+            <div class="rate-time">
+              <div class="star-rate">
+                <img src="Assets/icons/star.svg" alt="" />
+                <div class="rating">4.7</div>
+              </div>
+              <div class="food-time">
+                <div class="food-time-inner">
+                  <div class="food-time-number">50-79</div>
+                  <div class="food-time-unit">min</div>
+                </div>
+              </div>
+            </div>
+
+            <img
+              class="bx bx-cart-alt"
+              src="/Assets/icons/plus.svg"
+              style="max-width: 1.375rem"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="/Assets/images/unsplash_CbNAuxSZTFo.png" alt="" srcset="" />
+
+          <div class="content">
+            <div class="content-1">
+              <span>Home made pizza</span>
+              <span>₹190</span>
+            </div>
+
+            <div class="rate-time">
+              <div class="star-rate">
+                <img src="Assets/icons/star.svg" alt="" />
+                <div class="rating">4.7</div>
+              </div>
+              <div class="food-time">
+                <div class="food-time-inner">
+                  <div class="food-time-number">50-79</div>
+                  <div class="food-time-unit">min</div>
+                </div>
+              </div>
+            </div>
+
+            <img
+              class="bx bx-cart-alt"
+              src="/Assets/icons/plus.svg"
+              style="max-width: 1.375rem"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="/Assets/images/unsplash_MqT0asuoIcU.png" alt="" srcset="" />
+
+          <div class="content">
+            <div class="content-1">
+              <span>Home made pizza</span>
+              <span>₹190</span>
+            </div>
+
+            <div class="rate-time">
+              <div class="star-rate">
+                <img src="Assets/icons/star.svg" alt="" />
+                <div class="rating">4.7</div>
+              </div>
+              <div class="food-time">
+                <div class="food-time-inner">
+                  <div class="food-time-number">50-79</div>
+                  <div class="food-time-unit">min</div>
+                </div>
+              </div>
+            </div>
+
+            <img
+              class="bx bx-cart-alt"
+              src="/Assets/icons/plus.svg"
+              style="max-width: 1.375rem"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="/Assets/images/unsplash_nP11TkjxJ7s.png" alt="" srcset="" />
+
+          <div class="content">
+            <div class="content-1">
+              <span>Home made pizza</span>
+              <span>₹190</span>
+            </div>
+
+            <div class="rate-time">
+              <div class="star-rate">
+                <img src="Assets/icons/star.svg" alt="" />
+                <div class="rating">4.7</div>
+              </div>
+              <div class="food-time">
+                <div class="food-time-inner">
+                  <div class="food-time-number">50-79</div>
+                  <div class="food-time-unit">min</div>
+                </div>
+              </div>
+            </div>
+
+            <img
+              class="bx bx-cart-alt"
+              src="/Assets/icons/plus.svg"
+              style="max-width: 1.375rem"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="/Assets/images/unsplash_sejqj6Eaqe8.png" alt="" srcset="" />
+
+          <div class="content">
+            <div class="content-1">
+              <span>Home made pizza</span>
+              <span>₹190</span>
+            </div>
+
+            <div class="rate-time">
+              <div class="star-rate">
+                <img src="Assets/icons/star.svg" alt="" />
+                <div class="rating">4.7</div>
+              </div>
+              <div class="food-time">
+                <div class="food-time-inner">
+                  <div class="food-time-number">50-79</div>
+                  <div class="food-time-unit">min</div>
+                </div>
+              </div>
+            </div>
+
+            <img
+              class="bx bx-cart-alt"
+              src="/Assets/icons/plus.svg"
+              style="max-width: 1.375rem"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="/Assets/images/unsplash_UxRhrU8fPHQ.png" alt="" srcset="" />
+
+          <div class="content">
+            <div class="content-1">
+              <span>Home made pizza</span>
+              <span>₹190</span>
+            </div>
+
+            <div class="rate-time">
+              <div class="star-rate">
+                <img src="Assets/icons/star.svg" alt="" />
+                <div class="rating">4.7</div>
+              </div>
+              <div class="food-time">
+                <div class="food-time-inner">
+                  <div class="food-time-number">50-79</div>
+                  <div class="food-time-unit">min</div>
+                </div>
+              </div>
+            </div>
+
+            <img
+              class="bx bx-cart-alt"
+              src="/Assets/icons/plus.svg"
+              style="max-width: 1.375rem"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="/Assets/images/unsplash_Y6OgisiGBjM.png" alt="" srcset="" />
+
+          <div class="content">
+            <div class="content-1">
+              <span>Home made pizza</span>
+              <span>₹190</span>
+            </div>
+
+            <div class="rate-time">
+              <div class="star-rate">
+                <img src="Assets/icons/star.svg" alt="" />
+                <div class="rating">4.7</div>
+              </div>
+              <div class="food-time">
+                <div class="food-time-inner">
+                  <div class="food-time-number">50-79</div>
+                  <div class="food-time-unit">min</div>
+                </div>
+              </div>
+            </div>
+
+            <img
+              class="bx bx-cart-alt"
+              src="/Assets/icons/plus.svg"
+              style="max-width: 1.375rem"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="/Assets/images/unsplash_CbNAuxSZTFo.png" alt="" srcset="" />
+
+          <div class="content">
+            <div class="content-1">
+              <span>Home made pizza</span>
+              <span>₹190</span>
+            </div>
+
+            <div class="rate-time">
+              <div class="star-rate">
+                <img src="Assets/icons/star.svg" alt="" />
+                <div class="rating">4.7</div>
+              </div>
+              <div class="food-time">
+                <div class="food-time-inner">
+                  <div class="food-time-number">50-79</div>
+                  <div class="food-time-unit">min</div>
+                </div>
+              </div>
+            </div>
+
+            <img
+              class="bx bx-cart-alt"
+              src="/Assets/icons/plus.svg"
+              style="max-width: 1.375rem"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="box">
+          <img
+            src="/Assets/images/pexels-mumma-oyens-8799602 1.png"
+            alt=""
+            srcset=""
+          />
+
+          <div class="content">
+            <div class="content-1">
+              <span>Home made pizza</span>
+              <span>₹190</span>
+            </div>
+
+            <div class="rate-time">
+              <div class="star-rate">
+                <img src="Assets/icons/star.svg" alt="" />
+                <div class="rating">4.7</div>
+              </div>
+              <div class="food-time">
+                <div class="food-time-inner">
+                  <div class="food-time-number">50-79</div>
+                  <div class="food-time-unit">min</div>
+                </div>
+              </div>
+            </div>
+
+            <img
+              class="bx bx-cart-alt"
+              src="/Assets/icons/plus.svg"
+              style="max-width: 1.375rem"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="carousel" id="carousel">
+      <div class="carousel-heading">
+        <h1>Popular Items</h1>
+      </div>
+
+      <div
+        class="gallery js-flickity"
+        data-flickity-options='{"autoPlay": 2500, "groupCells": "33%", "freeScroll": false, "wrapAround": true, "adaptiveHeight": true, "prevNextButtons": true}'
+      >
+        <div class="gallery-cell">
+          <div class="product-container">
+            <div class="box">
+              <img
+                src="/Assets/images/pexels-omar-mahmood-106343 1.png"
+                alt=""
+                srcset=""
+              />
+
+              <div class="content">
+                <div class="content-1">
+                  <span>Home made pizza</span>
+                  <span>₹190</span>
+                </div>
+
+                <div class="rate-time">
+                  <div class="star-rate">
+                    <img src="Assets/icons/star.svg" alt="" />
+                    <div class="rating">4.7</div>
+                  </div>
+                  <div class="food-time">
+                    <div class="food-time-inner">
+                      <div class="food-time-number">50-79</div>
+                      <div class="food-time-unit">min</div>
+                    </div>
+                  </div>
+                </div>
+
+                <img
+                  class="bx bx-cart-alt"
+                  src="/Assets/icons/plus.svg"
+                  style="max-width: 1.375rem"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-cell">
+          <div class="product-container">
+            <div class="box">
+              <img
+                src="/Assets/images/unsplash_sejqj6Eaqe8.png"
+                alt=""
+                srcset=""
+              />
+
+              <div class="content">
+                <div class="content-1">
+                  <span>Home made pizza</span>
+                  <span>₹190</span>
+                </div>
+
+                <div class="rate-time">
+                  <div class="star-rate">
+                    <img src="Assets/icons/star.svg" alt="" />
+                    <div class="rating">4.7</div>
+                  </div>
+                  <div class="food-time">
+                    <div class="food-time-inner">
+                      <div class="food-time-number">50-79</div>
+                      <div class="food-time-unit">min</div>
+                    </div>
+                  </div>
+                </div>
+
+                <img
+                  class="bx bx-cart-alt"
+                  src="/Assets/icons/plus.svg"
+                  style="max-width: 1.375rem"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-cell">
+          <div class="product-container">
+            <div class="box">
+              <img
+                src="/Assets/images/unsplash_33GPuoFI7v8.png"
+                alt=""
+                srcset=""
+              />
+
+              <div class="content">
+                <div class="content-1">
+                  <span>Home made pizza</span>
+                  <span>₹190</span>
+                </div>
+
+                <div class="rate-time">
+                  <div class="star-rate">
+                    <img src="Assets/icons/star.svg" alt="" />
+                    <div class="rating">4.7</div>
+                  </div>
+                  <div class="food-time">
+                    <div class="food-time-inner">
+                      <div class="food-time-number">50-79</div>
+                      <div class="food-time-unit">min</div>
+                    </div>
+                  </div>
+                </div>
+
+                <img
+                  class="bx bx-cart-alt"
+                  src="/Assets/icons/plus.svg"
+                  style="max-width: 1.375rem"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-cell">
+          <div class="product-container">
+            <div class="box">
+              <img
+                src="/Assets/images/unsplash_Y6OgisiGBjM.png"
+                alt=""
+                srcset=""
+              />
+
+              <div class="content">
+                <div class="content-1">
+                  <span>Home made pizza</span>
+                  <span>₹190</span>
+                </div>
+
+                <div class="rate-time">
+                  <div class="star-rate">
+                    <img src="Assets/icons/star.svg" alt="" />
+                    <div class="rating">4.7</div>
+                  </div>
+                  <div class="food-time">
+                    <div class="food-time-inner">
+                      <div class="food-time-number">50-79</div>
+                      <div class="food-time-unit">min</div>
+                    </div>
+                  </div>
+                </div>
+
+                <img
+                  class="bx bx-cart-alt"
+                  src="/Assets/icons/plus.svg"
+                  style="max-width: 1.375rem"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="request-btn-container">
+        <button
+          class="request-dish"
+          type="button"
+          name="myButton"
+          onClick="requestDish()"
+        >
+          Request a Dish
+        </button>
+      </div>
+    </section>
+
+    <section id="blog" class="service-section">
+      <div class="service-container">
+        <div class="main-content">
+          <h2>We are providing best</h2>
+          <h2>home cooked food delivery service.</h2>
+          <article>
+            <p>Away from home and craving the tasty homemade recipes?</p>
+            <p>Choose from a selection of our delicious home cooked dishes</p>
+          </article>
+        </div>
+
+        <div class="video-card">
+          <video id="myvid" poster="/Assets/images/video-img.png">
+            <source
+              src="/Assets/videos/CINEMATIC PIZZA B ROLL Sony A7III(1).mp4"
+              type="video/mp4"
+            />
+          </video>
+
+          <div class="vid-button-container">
+            <div id="vidbutton" class="botón">
+              <div class="fondo" x="0" y="0" width="200" height="200"></div>
+              <div class="icono" width="200" height="200">
+                <div
+                  class="parte izquierda"
+                  x="0"
+                  y="0"
+                  width="200"
+                  height="200"
+                  fill="#fff"
+                ></div>
+                <div
+                  class="parte derecha"
+                  x="0"
+                  y="0"
+                  width="200"
+                  height="200"
+                  fill="#fff"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lower-cover"></div>
+    </section>
+
+    <!-- contact us section -->
+    <section id="contact" class="contact">
+      <div class="contact-form">
+        <h2>Do you have a question</h2>
+        <h2>or want to become a seller?</h2>
+        <p>Fill this from and our manager will contact you rest 48 hours.</p>
+        <form action="">
+          <input class="input-name" type="" placeholder="Your Name" required />
+
+          <input
+            type="email"
+            name="email"
+            id=""
+            placeholder="Your e-mail"
+            required
+          />
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Your message"
+          ></textarea>
+          <input type="submit" name="" value="submit" class="btn" />
+        </form>
+      </div>
+
+      <div class="contact-img">
+        <img
+          src="/Assets/icons/Food delivery illustration.svg"
+          alt=""
+          srcset=""
+        />
+      </div>
+    </section>
+
+    <footer id="about">
+      <div class="footer-container">
+        <a href="#" class="logo logo-footer">
+          <img src="Assets/icons/Logo.svg" alt="" />
+        </a>
+        <ul class="navbar">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <!-- social media icons in nav -->
+        <div class="header-icons footer-icons">
+          <div class="footer-icons-container">
+            <img
+              id="search-icon"
+              class="insta search-icon"
+              src="Assets/icons/instagram.svg"
+              alt=""
+            />
+            <img
+              id="cart-icon"
+              class="facebook cart-icon"
+              src="Assets/icons/Facebook.svg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <hr />
+    </footer>
+
+<!-- carousel script -->
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  </body>
+</html>
